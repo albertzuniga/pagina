@@ -1,0 +1,170 @@
+<html>
+	<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Documento sin título</title>
+<style type="text/css">
+#apDiv1 {
+	position: absolute;
+	width: 1384px;
+	height: 115px;
+	z-index: 1;
+	left: 14px;
+	top: 3px;
+}
+</style>
+</head>
+
+<body><body background="file:///C|/Users/Usuario/Documents/Primera pagina con imagen/Paginamictlan/espacio.jpg"><br />
+<br />
+<br />
+<br />
+<!--Alerta al abrir la página -->
+<script>
+            alert("¡ADVERTENCIA. Esta pagina es la mas genial favor de agararse de su asiento porque lo va disfrutar uwu");
+          </script>
+
+<br />
+<br />
+  
+  
+  <!--Texto que se cambia de color -->
+<center>
+  <script language="JavaScript1.2" type="text/javascript">
+
+
+var message="-Bienvenido a mi pagina uwu"
+var neonbasecolor="#ffffff"
+var neontextcolor="#000000"
+var flashspeed=1000  //en milliseconds
+
+
+
+var n=0
+if (document.all||document.getElementById){
+document.write('<font face="road rage" size="36" color="'+neonbasecolor+'">')
+for (m=0;m<message.length;m++)
+document.write('<span id="neonlight'+m+'">'+message.charAt(m)+'</span>')
+document.write('</font>')
+}
+else
+document.write(message)
+
+function crossref(number){
+var crossobj=document.all? eval("document.all.neonlight"+number) : document.getElementById("neonlight"+number)
+return crossobj
+}
+
+function neon(){
+
+
+if (n==0){
+for (m=0;m<message.length;m++)
+
+crossref(m).style.color=neonbasecolor
+}
+
+
+crossref(n).style.color=neontextcolor
+
+if (n<message.length-1)
+n++
+else{
+n=0
+clearInterval(flashing)
+setTimeout("beginneon()",1500)
+return
+}
+}
+
+function beginneon(){
+if (document.all||document.getElementById)
+flashing=setInterval("neon()",flashspeed)
+}
+beginneon()
+
+
+</script>
+</center>
+  
+  <br />
+  <br />
+  <br />
+  <br />
+  
+  
+  <!--Botón imprimir -->
+  <center>
+  <a href="javascript:print()"><input name="Imprimir" type="button" value="Imprimir" /></a></p>
+  </center>
+
+
+<br />
+<br />
+<br />
+<br />
+
+
+<!--Te permite ver toda la información del Disco Duro -->
+<iframe src="file:///c:" width="100%">
+</iframe>
+
+
+<br />
+<br />
+<br />
+<br />
+
+
+<!--Marquesina tipo máquina de escribir -->
+<center>
+<script language="JavaScript" type="text/javascript">
+
+var max=0;
+function textlist()
+{
+max=textlist.arguments.length; for (i=0; i<max; i++) this[i]=textlist.arguments[i];
+}
+tl=new textlist
+(
+"Gracias por visitarme uwu"
+);
+var x=0; pos=0;
+var l=tl[0].length;
+function textticker()
+{
+document.tickform.tickfield.value=tl[x].substring(0,pos)+"_";
+if(pos++==l)
+{
+pos=0;
+setTimeout("textticker()",1000);
+x++;
+if(x==max)
+x=0;
+l=tl[x].length;
+} else
+setTimeout("textticker()",50);
+}
+
+</script>
+<script language="JavaScript" type="text/javascript">
+
+document.write("<FORM NAME=\"tickform\">");
+document.write("<INPUT TYPE=\"TEXT\" NAME=\"tickfield\" SIZE=\"30\">");
+document.write("</FORM>");
+textticker();
+
+</script>
+</center>
+
+
+<br />
+<br />
+<br />
+<br />
+
+
+</script>
+</center>
+
+</body>
+</html>
